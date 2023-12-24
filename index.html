@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookshelf Apps || Jimmi Andreansa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Bookshelf Apps</h1>
+    <p>Sebuah aplikasi web sederhana inventori buku.</p>
+  </header>
+  <main>
+    <div class="section-atas">
+      <section class="pencarian-buku">
+        <h2 class="judul">Cari Buku Disini 👇</h2>
+        <form id="cariBuku">
+          <div class="form-group">
+            <input type="text" name="cari" id="cariJudulBuku" placeholder="" autocomplete="off" />
+            <label for="cari">Judul Buku</label>
+          </div>
+          <button id="tombolCari" type="submit" class="tombol-cari">
+            Cari Buku
+          </button>
+        </form>
+      </section>
+    </div>
+    <div class="section-bawah">
+      <section class="tambah-buku">
+        <h2 class="judul">Tambah Buku Baru 👇</h2>
+        <form id="masukkanDataBuku" action="" method="post">
+          <div class="form-group">
+            <input type="text" name="judul" id="masukkanJudulBuku" placeholder="" autocomplete="off" />
+            <label for="judul">Judul Buku</label>
+          </div>
+          <div class="form-group">
+            <input type="text" name="penulis" id="masukkanPenulisBuku" placeholder="" autocomplete="off" />
+            <label for="penulis">Nama Penulis</label>
+          </div>
+          <div class="form-group">
+            <input type="number" name="tahun" id="masukkanTahunBuku" placeholder="" />
+            <label for="tahun">Tahun Terbit</label>
+          </div>
+          <div class="ceklis">
+            <input type="checkbox" name="sudahDibaca" id="sudahDibaca" placeholder="" />
+            <label for="sudahDibaca">Sudah selesai dibaca</label>
+          </div>
+          <button id="simpanBuku" type="submit" class="tombol-submit">
+            Simpan
+          </button>
+        </form>
+      </section>
+      <section class="daftar-buku">
+        <h2 class="judul">Buku yang belum dibaca 👇</h2>
+        <div id="bukuBelumDibaca"></div>
+      </section>
+      <section class="daftar-buku">
+        <h2 class="judul">Buku yang sudah dibaca 👇</h2>
+        <div id="bukuSudahDibaca"></div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>
+      Created by
+      <a href="https://www.instagram.com/jivvmae/" target="_blank">Jimmi Andreansa</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

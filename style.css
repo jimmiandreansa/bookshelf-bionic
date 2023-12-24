@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1b4242;
+  padding-top: 86px;
+  padding-bottom: 42px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #afc8ad;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #5c8374;
+  z-index: 99;
+}
+
+main {
+  padding: 24px;
+}
+
+.section-atas {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.section-bawah {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.pencarian-buku {
+  width: 560px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.judul {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+}
+
+.tambah-buku {
+  flex: 1;
+  padding: 24px 16px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.daftar-buku {
+  width: 27%;
+  padding: 24px 16px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.tombol-cari,
+.tombol-submit {
+  border: none;
+  outline: none;
+  background-color: #5c8374;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  float: right;
+  padding: 8px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tombol-cari:hover,
+.tombol-submit:hover {
+  background-color: #1b4242;
+}
+
+.ceklis {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ceklis label {
+  color: #5c8374;
+}
+
+.ceklis input,
+.ceklis label {
+  cursor: pointer;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.form-group input {
+  border: 1px solid #afc8ad;
+  padding: 8px 16px;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-group label {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #afc8ad;
+  transition: 0.3s;
+  cursor: text;
+}
+
+.form-group input:not(:placeholder-shown),
+.form-group input:focus {
+  border: 1px solid #5c8374;
+}
+
+.form-group input:not(:placeholder-shown) ~ label,
+.form-group input:focus ~ label {
+  top: 0;
+  left: 12px;
+  color: #5c8374;
+  padding: 0 4px;
+  background-color: #fff;
+  font-size: 12px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #5c8374;
+  background-color: #afc8ad;
+  padding: 16px;
+}
+
+footer a {
+  color: #1b4242;
+  font-weight: bold;
+  text-decoration: none;
+}
